@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9d7f01a-3072-4352-9a53-8e580c15351d" name="Default Changelist" comment="">
+    <list default="true" id="d9d7f01a-3072-4352-9a53-8e580c15351d" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/pattaya-v12-cyrillic-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/pattaya-v12-cyrillic-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/pattaya-v12-cyrillic-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/pattaya-v12-cyrillic-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/pattaya-v12-cyrillic-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon_shaurma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/photo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/shaurma1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smile1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smile2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +46,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel\domains\shaurma.loc\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OSPanel\domains\shaurma.loc\img" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -46,12 +67,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479628992</updated>
-      <workItem from="1669479630035" duration="494000" />
+      <workItem from="1669479630035" duration="15329000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1669480207404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669480207404</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="643" y="310" key="Github.ShareDialog" timestamp="1669479758623">
@@ -66,6 +99,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1669480128649" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1669480213774">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1669480213774" />
     <state x="599" y="203" key="svn.repositoryBrowser" timestamp="1669479743564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
