@@ -231,6 +231,13 @@ background: #FF2303;
     left: -70px;
     top: -33px;
 }
+.about__p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
 .menu__h2{
     font-style: normal;
     font-weight: 700;
@@ -240,7 +247,7 @@ background: #FF2303;
 .menu__title{
     font-style: normal;
     font-weight: 700;
-    font-size: 33px;
+    font-size: 26px;
     background: linear-gradient(180deg, #FF2303 0%, #FFE603 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -254,12 +261,13 @@ background: #FF2303;
 }
 .menu__block_menu__title{
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
      text-align: center;
     color: #FF2303;
+    margin-bottom: 30px;
 }
 .menu__block_menu{
-    min-height: 250px;
+    min-height: 350px;
     background-image: linear-gradient(180deg, #FF2303 0%, #FFE603 100%);
     border-radius: 10px;
     padding: 1px;
@@ -268,16 +276,42 @@ background: #FF2303;
     min-height: inherit;
     background: #000;
     border-radius: 10px;
+    padding: 15px;
 }
 .menu__list{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 135%;
+    line-height: 115%;
     color: #FFFFFF;
-    margin-left: 30px;
+    margin-bottom: 30px;
 }
 .menu__list li{
-    list-style-type: circle;
+    list-style-type: none;
+}
+.menu__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    /*width: 220px;*/
+    height: 38px;
+    background: #FF2303;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffeb3b;
+}
+.menu__btn:last-child{
+    margin-bottom: 0px;
+}
+.menu__btn span{
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
 }
 
