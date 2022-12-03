@@ -52,6 +52,54 @@
     url('./fonts/jura-v24-cyrillic-700.svg#Jura') format('svg'); /* Legacy iOS */
 }
 
+
+/*swiper*/
+
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-pagination-bullet{
+    background: #E6EB1C;
+    opacity: .8;
+}
+.swiper-pagination-bullet-active{
+    background: #FF2303;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #E6EB1C;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 30px;
+}
+/*swiper end */
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -197,41 +245,41 @@ img.img-fluid {
 .main_block__hit_sale{
     width: 535px;
 }
-.about__right_block{
+.action__right_block{
 background: #FF2303;
     height: 360px;
 }
-.about__img-right{
+.action__img-right{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
-.about__h2{
+.action__h2{
     font-weight: 700;
     font-size: 80px;
     color: #fff;
 }
-.about__list{
+.action__list{
     margin-left: 70px;
 }
-.about__list ul{
+.action__list ul{
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 47px;
     color: #FFFFFF;
 }
-.about__list ul li{
+.action__list ul li{
     margin-bottom: 30px;
     position: relative;
 }
-.about__list ul li:before {
+.action__list ul li:before {
     content: url("data:image/svg+xml,%3Csvg width='66' height='91' viewBox='0 0 66 91' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_266_77)'%3E%3Cpath d='M58.8975 28.5325C50.5979 32.463 43.3485 36.569 35.9148 43.0592C32.6364 45.9219 28.914 49.3676 26.0782 53.0006C24.5124 54.8923 21.8564 57.7311 20.278 61.0062C18.4493 55.5907 16.5522 49.5438 14.3113 44.385C12.7137 40.7088 4.68075 41.8855 6.55361 46.196C9.91082 53.9196 12.0962 62.4225 15.2561 70.2965C16.5786 73.5873 22.316 71.2586 23.9206 69.8326C29.1947 65.1273 32.0001 57.3376 36.539 51.5257C43.4744 42.6334 52.725 37.3174 61.5454 33.1418C67.5072 29.971 63.3359 26.4364 58.904 28.5362' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_266_77'%3E%3Crect width='53.4543' height='67.3047' fill='white' transform='matrix(0.872641 0.488362 -0.280016 0.959995 19.043 0.261478)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     position: absolute;
     left: -70px;
     top: -33px;
 }
-.about__p{
+.action__p{
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -266,13 +314,13 @@ background: #FF2303;
     color: #FF2303;
     margin-bottom: 30px;
 }
-.menu__block_menu{
+.menu__block_menu, .rewiew__block{
     min-height: 350px;
     background-image: linear-gradient(180deg, #FF2303 0%, #FFE603 100%);
     border-radius: 10px;
     padding: 1px;
 }
-.menu__block_menu2{
+.menu__block_menu2, .review__block_slide{
     min-height: inherit;
     background: #000;
     border-radius: 10px;
@@ -314,4 +362,28 @@ background: #FF2303;
     line-height: 28px;
     color: #000000;
 }
+img.menu__action {
+    position: absolute;
+    top: -41px;
+    right: -41px;
+    width: 100px;
+}
+
+.about__p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.review__date{
+    text-align: left;
+    line-height: 120%;
+    color: #fff;
+}
+.rewiew__block{
+    min-height: 280px;
+}
+
+
 

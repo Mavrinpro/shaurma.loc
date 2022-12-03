@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <section id="header">
@@ -62,17 +64,17 @@
     </div>
 </section>
 <section class="mt-5">
-    <div class="container-fluid about">
+    <div class="container-fluid action">
         <div class="row align-items-center">
             <div class="col-md-5 p-0">
-                <img src="img/photo1.jpg" alt="photo" class="img-fluid about__img-right">
+                <img src="img/photo1.jpg" alt="photo" class="img-fluid action__img-right">
             </div>
             <div class="col-md-7 p-0">
-                <div class="about__right_block p-4">
-                    <h2 class="about__h2">Почему мы?</h2>
+                <div class="action__right_block p-4">
+                    <h2 class="action__h2">Почему мы?</h2>
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="about__list mt-3">
+                            <div class="action__list mt-3">
                                 <ul>
                                     <li>Самые свежие продукты</li>
                                     <li>Учитываем ваши пожелания</li>
@@ -113,7 +115,7 @@
                     <!--                <p class="menu__title">Блины</p>-->
                     <!--            </div>-->
                     <div class="col-md-12 col-3">
-                        <img src="img/icon_shaurma.png" alt="" class="img-fluid">
+                        <img src="img/drink.png" alt="" class="img-fluid">
                         <p class="menu__title">Напитки</p>
                     </div>
                 </div>
@@ -160,6 +162,7 @@
             <div class="col-md-3 p-2">
                 <div class="menu__block_menu">
                     <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/hit.png" class="menu__action">
                         <p class="menu__block_menu__title">
                             Шаурма с креветками
                         </p>
@@ -225,22 +228,25 @@
 
                 </div>
             </div>
+            <div class="col-md-3 p-2">
+                <img src="img/shaurma2.png" alt="шаурма" class="d-none d-lg-block">
+            </div>
         </div>
     </div>
 </section>
 <section class="mt-5">
-    <div class="container-fluid about">
+    <div class="container-fluid action">
         <div class="row align-items-center">
             <div class="col-md-5 p-0">
-                <img src="img/photo1.jpg" alt="photo" class="img-fluid about__img-right">
+                <img src="img/photo1.jpg" alt="photo" class="img-fluid action__img-right">
             </div>
             <div class="col-md-7 p-0">
-                <div class="about__right_block p-4">
-                    <h2 class="about__h2">Акция!</h2>
+                <div class="action__right_block p-4">
+                    <h2 class="action__h2">Акция!</h2>
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="about__list mt-3 ml-0">
-                                <p class="about__p">Беспройгрышная лотерея при заказе свыше 500 ₽</p>
+                            <div class="action__list mt-3 ml-0">
+                                <p class="action__p">Беспройгрышная лотерея при заказе свыше 500 ₽</p>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -252,5 +258,263 @@
         </div>
     </div>
 </section>
+<section class="mt-5">
+    <div class="container action">
+        <div class="row align-items-center">
+            <div class="col-md-6 p-0">
+                <h2 class="menu__h2 mb-4">О нас</h2>
+                <p class="about__p mb-4">В нашем кафе сначала узнают вкус каждого клиента, а потом предлагают шаурму, исходя из ваших предпочтений.</p>
+                <p class="about__p mb-4">Вас несомненно порадует возможность добавить или убрать из блюда ингредиент, который вам не по вкусу.</p>
+                <p class="about__p">Хозяйка Светлана часто обслуживает гостей лично, чтобы учесть пожелания и потребности каждого.</p>
+            </div>
+            <div class="col-lg-6 p-0">
+                <img src="img/about.jpg" alt="photo" class="img-fluid action__img-right">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-5">
+    <div class="container review">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="menu__h2 mb-4">Отзывы</h2>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        12.06.2021
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Попали в это место совершенно случайно и должна признаться, что была приятна удивлена:) Еда была очень вкусная, обслуживание великолепное, нам с подругой всё понравилось. P.S. А беспройгрышная лотерея стала прекрасным бонусом!
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        12.04.2021
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Быстро, качественно, практически даром; грамотные сотрудники; корректное обращение с клиентами.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        23.03.2021
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Очень понравилась кухня, обслуживание,был приятно удивлён ценами.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        30.08.2022
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Очень люблю тут покушать. Как дома готовят, порции большие. В общем — отличное место для любителей вкусно поесть и отдохнуть. Жаль только работают до 23.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        24.08.2022
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Мы частые гости кафе. Хочется сказать вам огромное спасибо. Вы лучшие. Соотношения цены и качества очень радует. Шаурма очень вкусная, спасибо повару. Персонал очень приветлив. отдельное спасибо хозяйке Светлане. Удачи и процветание вашему кафе.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        13.08.2020
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Лучшая шаурмичная в городе! Очень харизматичная и общительный хозяйка, найдёт язык с каждым покупателем и поднимит настроение каждому. По вкусу шаурмы — это лучшее, что я ел. Очень свежие продукты и неповторимый вкус.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        24.10.2020
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Отличное место! Большой выбор на любой вкус. Хозяйка очень приятная и общительная, всегда советует и спрашивает предпочтение по остроте. Шаурма вкусная, удобно держать и есть. Рекомендую!
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        14.01.2021
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Очень вкусная шаурма по приемлемой цене!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        24.01.2021
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Невероятно вкусная шаурма,вот это я понимаю настоящая качественная и главное все натуральные ингридиенты 🤗 доброжелательная и приятная атмосфера. все супер! обязательно веренемся ещё 💯
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rewiew__block">
+                                <div class="review__block_slide ">
+                                    <img src="img/star.svg" alt="star">
+                                    <p class="review__date mt-2">
+                                        16.09.2021
+                                    </p>
+                                    <p class="review__date mt-2">
+                                        Очень добрый, и культурный повар. Покупала шаурму, очень ОООочень вкусно и сытно. Рекомендую и советую. Перекусить только сюда! Процветания, продуктивной работы и здоровья!
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="mt-5">
+    <div class="container-fluid action">
+        <div class="row align-items-center">
+            <div class="col-md-5 p-0">
+                <img src="img/photo1.jpg" alt="photo" class="img-fluid action__img-right">
+            </div>
+            <div class="col-md-7 p-0">
+                <div class="action__right_block p-4">
+                    <h2 class="action__h2">Почему мы?</h2>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="action__list mt-3">
+                                <ul>
+                                    <li>Самые свежие продукты</li>
+                                    <li>Учитываем ваши пожелания</li>
+                                    <li>Каждый клиент - наш друг</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/smile2.png" alt="smile" class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        slidesPerView: 4,
+        spaceBetween: 20,
+        centeredSlides: false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            767: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            }
+        }
+
+    });
+</script>
 </body>
 </html>
