@@ -56,7 +56,7 @@
 /*swiper*/
 
 
-.swiper {
+.swiper, .photo__swiper {
     width: 100%;
     height: 400px;
 }
@@ -259,17 +259,17 @@ background: #FF2303;
     font-size: 80px;
     color: #fff;
 }
-.action__list{
+.action__list, .action__list2{
     margin-left: 70px;
 }
-.action__list ul{
+.action__list ul, .action__list2 ul{
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 47px;
     color: #FFFFFF;
 }
-.action__list ul li{
+.action__list ul li, .action__list2 ul li{
     margin-bottom: 30px;
     position: relative;
 }
@@ -384,6 +384,46 @@ img.menu__action {
 .rewiew__block{
     min-height: 280px;
 }
+.action__list2 ul li{
+    margin-bottom: 0;
+    list-style-type: disc;
+}
+.contacts__p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
 
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 
+    /* white txt */
 
+    color: #FFFFFF;
+}
+.photo img{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.photo__swiper .swiper-slide {
+    max-height: 400px !important;
+    width: auto !important;
+}
+.photo__swiper .swiper-slide img{
+    height: 400px;
+}
+.photo__swiper .swiper-paginate{
+    text-align: center;
+}
+.photo__swiper .swiper-paginate {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+    bottom: 0px;
+
+}
