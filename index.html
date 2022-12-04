@@ -101,31 +101,25 @@
                 <h2 class="menu__h2">Наше меню</h2>
             </div>
         </div>
-        <div class="row mt-5 d-block d-md-flex tabs">
-            <div class="col-md-2">
-                <div class="flex-md-column flex-row d-flex buttons">
 
-                    <div class="col-md-12 col-6 mb-4 text-center button" data-value="1">
-                        <img src="img/icon_shaurma.png" alt="" class="img-fluid">
-                        <p class="menu__title">Шаурма</p>
-                    </div>
-                    <!--            <div class="col-md-12 col-3 mb-4 text-center">-->
-                    <!--                <img src="img/icon_shaurma.png" alt="" class="img-fluid">-->
-                    <!--                <p class="menu__title">Шашлык</p>-->
-                    <!--            </div>-->
-                    <!--            <div class="col-md-12 col-3 mb-4 text-center">-->
-                    <!--                <img src="img/icon_shaurma.png" alt="" class="img-fluid">-->
-                    <!--                <p class="menu__title">Блины</p>-->
-                    <!--            </div>-->
-                    <div class="col-md-12 col-6 button" data-value="2">
-                        <img src="img/drink.png" alt="" class="img-fluid">
-                        <p class="menu__title">Напитки</p>
-                    </div>
+        <div class="col-md-2">
+            <div class=" d-flex buttons mt-5">
+                <div class="col-md-12 col-6 mb-4 text-center button activity" data-value="1">
+                    <img src="img/icon_shaurma.png" alt="" class="img-fluid">
+                    <p class="menu__title">Шаурма</p>
+                </div>
+
+                <div class="col-md-12 col-6 button" data-value="2">
+                    <img src="img/drink.png" alt="" class="img-fluid">
+                    <p class="menu__title">Напитки</p>
+                </div>
 
             </div>
-            </div>
+        </div>
 
-
+        <div class="tabs">
+            <div class="tab tab--1 active">
+                <div class="row mt-3 d-block d-md-flex">
                     <div class="col-md-4 col-lg-3 p-2">
                         <div class="menu__block_menu">
                             <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
@@ -237,8 +231,36 @@
                     <div class="col-md-4 col-lg-3 p-2">
                         <img src="img/shaurma2.png" alt="шаурма" class="d-none d-lg-block">
                     </div>
+                </div>
+            </div>
+            <div class="tab tab--2">
+                <div class="row mt-3 d-block d-md-flex">
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <p class="menu__block_menu__title">
+                                    Фирменная шаурма
+                                </p>
+                                <ul class="menu__list">
+                                    <li>Фирменная</li>
+                                    <li>Кавказская</li>
+                                    <li>Президентская</li>
+                                    <li>Острая с халапеньо</li>
+                                    <li>Наршараб</li>
+                                    <li>Терияки</li>
+                                    <li>Вегетарианская</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>Мини-189 ₽</span></div>
+                                    <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
+                                    <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+                                </div>
+                            </div>
 
-
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -692,6 +714,15 @@
     });
 
     // Tabs
+
+    const btn = document.querySelector('.button');
+    btn.addEventListener('click', event => {
+
+            this.classList.add('.activity');
+
+    });
+
+
     class TabList {
         constructor(buttonsContainer, tabs) {
             this.buttonsContainer = buttonsContainer;
@@ -700,6 +731,8 @@
             this.buttonsContainer.addEventListener('click', event => {
                 const index = event.target.closest('.button').dataset.value;
 
+
+
                 this.openTab(index);
             });
         }
@@ -707,12 +740,13 @@
         openTab(index) {
             this.tabs.querySelector('.active').classList.remove('active');
             this.tabs.querySelector(`.tab--${index}`).classList.add('active');
+
         }
     }
 
-    document.addEventListener('DOMContentLoaded', ()=>{
+    document.addEventListener('DOMContentLoaded', () => {
         const buttonsContainer = document.querySelector('.buttons');
-        const tabs             = document.querySelector('.tabs');
+        const tabs = document.querySelector('.tabs');
 
         const tabList = new TabList(buttonsContainer, tabs);
     })

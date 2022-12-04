@@ -487,6 +487,9 @@ img.menu__action {
 .tab.active {
     display: block;
 }
+.button{
+    cursor: pointer;
+}
 /*Media*/
 @media(max-width: 768px){
     .header__list li a{
