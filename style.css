@@ -427,3 +427,136 @@ img.menu__action {
     bottom: 0px;
 
 }
+.footer p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    /* or 31px */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer p span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.button_next, .button_prev {
+    position: absolute;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    margin-top: 44px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E6EB1C !important;
+}
+.button_next{
+    right: 10px;
+}
+.button_next:after{
+    content: "next";
+}
+.button_prev:after{
+    content: "prev";
+}
+.button_next:after, .button_prev:after {
+    font-family: swiper-icons;
+    font-size: 30px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+/*Media*/
+@media(max-width: 768px){
+    .header__list li a{
+        margin-right: 25px;
+        font-size: 20px;
+    }
+    h1{
+        font-size: 75px;
+        line-height: 120%;
+    }
+    .main_block__color_text {
+        color: #FF2303;
+        font-size: 44px;
+        line-height: 42px;
+        vertical-align: inherit;
+    }
+    a.header__phone{
+        font-size: 20px;
+    }
+    .action__h2{
+        font-size: 50px;
+    }
+    .action__list ul, .action__list2 ul {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    .menu__h2{
+        font-size: 50px;
+    }
+    .menu__block_menu__title{
+        font-size: 18px;
+    }
+    .menu__btn span{
+        font-size: 18px;
+    }
+    .action__p{
+        font-size: 30px;
+    }
+    .contacts__p{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 490px){
+    h1{
+        font-size: 42px;
+        line-height: 120%;
+        text-align: center;
+    }
+    .main_block__color_text{
+        font-size: 23px;
+    }
+    .main_block__span_text{
+        font-size: 24px;
+        line-height: 1;
+    }
+    ul.main_block__list li:before{
+        content: none;
+    }
+    .main_block__list{
+        list-style-type: disc;
+    }
+    .main_block__hit_sale{
+        width: 100%;
+    }
+    .action__right_block{
+        height: auto;
+    }
+}
+/*Media end */

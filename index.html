@@ -33,10 +33,12 @@
     <div class="container">
         <div class="main_block">
             <div class="row">
-                <h1>Еда для тебя</h1>
-                <p><span class="main_block__span_text">Это</span> <span class="main_block__color_text">«Необычная шаурмичная»</span>
-                </p>
-                <p class="main_block__span_text">и не только…</p>
+                <div class="col-md-12">
+                    <h1>Еда для тебя</h1>
+                    <p><span class="main_block__span_text">Это</span> <span class="main_block__color_text">«Необычная шаурмичная»</span>
+                    </p>
+                    <p class="main_block__span_text">и не только…</p>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
@@ -82,7 +84,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 d-none d-lg-block">
                             <img src="img/smile2.png" alt="smile" class="img-fluid">
                         </div>
 
@@ -99,10 +101,11 @@
                 <h2 class="menu__h2">Наше меню</h2>
             </div>
         </div>
-        <div class="row mt-5 d-block d-md-flex">
+        <div class="row mt-5 d-block d-md-flex tabs">
             <div class="col-md-2">
-                <div class="flex-md-column flex-row d-flex">
-                    <div class="col-md-12 col-3 mb-4 text-center">
+                <div class="flex-md-column flex-row d-flex buttons">
+
+                    <div class="col-md-12 col-6 mb-4 text-center button" data-value="1">
                         <img src="img/icon_shaurma.png" alt="" class="img-fluid">
                         <p class="menu__title">Шаурма</p>
                     </div>
@@ -114,123 +117,128 @@
                     <!--                <img src="img/icon_shaurma.png" alt="" class="img-fluid">-->
                     <!--                <p class="menu__title">Блины</p>-->
                     <!--            </div>-->
-                    <div class="col-md-12 col-3">
+                    <div class="col-md-12 col-6 button" data-value="2">
                         <img src="img/drink.png" alt="" class="img-fluid">
                         <p class="menu__title">Напитки</p>
                     </div>
-                </div>
+
             </div>
-            <div class="col-md-3 p-2">
-                <div class="menu__block_menu">
-                    <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
-                        <p class="menu__block_menu__title">
-                            Классическая шаурма
-                        </p>
-                        <ul class="menu__list">
-                            <li>С чесночным</li>
-                            <li>С красным</li>
-                            <li>С фирменным</li>
-                        </ul>
-                        <div class="menu__block_btn">
-                            <div class="menu__btn"><span>Мини-189 ₽</span></div>
-                            <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
-                            <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+            </div>
+
+
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <p class="menu__block_menu__title">
+                                    Классическая шаурма
+                                </p>
+                                <ul class="menu__list">
+                                    <li>С чесночным</li>
+                                    <li>С красным</li>
+                                    <li>С фирменным</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>Мини-189 ₽</span></div>
+                                    <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
+                                    <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3 p-2">
-                <div class="menu__block_menu">
-                    <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
-                        <p class="menu__block_menu__title">
-                            Шаурма «Для тебя»
-                        </p>
-                        <ul class="menu__list">
-                            <li>Барбекю</li>
-                            <li>Карри</li>
-                            <li>Сборная</li>
-                        </ul>
-                        <div class="menu__block_btn">
-                            <div class="menu__btn"><span>Мини-189 ₽</span></div>
-                            <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
-                            <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <p class="menu__block_menu__title">
+                                    Шаурма «Для тебя»
+                                </p>
+                                <ul class="menu__list">
+                                    <li>Барбекю</li>
+                                    <li>Карри</li>
+                                    <li>Сборная</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>Мини-189 ₽</span></div>
+                                    <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
+                                    <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <img src="img/hit.png" class="menu__action">
+                                <p class="menu__block_menu__title">
+                                    Шаурма с креветками
+                                </p>
+                                <ul class="menu__list">
+                                    <li>Фирменный соус</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>Мини-189 ₽</span></div>
+                                    <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
+                                    <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-none d-lg-block"></div>
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <p class="menu__block_menu__title">
+                                    Фирменная шаурма
+                                </p>
+                                <ul class="menu__list">
+                                    <li>Фирменная</li>
+                                    <li>Кавказская</li>
+                                    <li>Президентская</li>
+                                    <li>Острая с халапеньо</li>
+                                    <li>Наршараб</li>
+                                    <li>Терияки</li>
+                                    <li>Вегетарианская</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>Мини-189 ₽</span></div>
+                                    <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
+                                    <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <p class="menu__block_menu__title">
+                                    Дополнительно
+                                </p>
+                                <ul class="menu__list">
+                                    <li>Лук (жареный)</li>
+                                    <li>Морковь по-корейски</li>
+                                    <li>Халапеньо</li>
+                                    <li>Картофель (фри/пюре)</li>
+                                    <li>Зелень</li>
+                                    <li>Фасоль (марин.)</li>
+                                    <li>Грибы (марин.)</li>
+                                    <li>Маслины</li>
+                                    <li>Лук красный (марин.)</li>
+                                    <li>Корнишоны</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>Все по 50 ₽</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <img src="img/shaurma2.png" alt="шаурма" class="d-none d-lg-block">
                     </div>
 
-                </div>
-            </div>
-            <div class="col-md-3 p-2">
-                <div class="menu__block_menu">
-                    <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
-                        <img src="img/hit.png" class="menu__action">
-                        <p class="menu__block_menu__title">
-                            Шаурма с креветками
-                        </p>
-                        <ul class="menu__list">
-                            <li>Фирменный соус</li>
-                        </ul>
-                        <div class="menu__block_btn">
-                            <div class="menu__btn"><span>Мини-189 ₽</span></div>
-                            <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
-                            <div class="menu__btn"><span>Дабл-299 ₽</span></div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-3 p-2">
-                <div class="menu__block_menu">
-                    <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
-                        <p class="menu__block_menu__title">
-                            Фирменная шаурма
-                        </p>
-                        <ul class="menu__list">
-                            <li>Фирменная</li>
-                            <li>Кавказская</li>
-                            <li>Президентская</li>
-                            <li>Острая с халапеньо</li>
-                            <li>Наршараб</li>
-                            <li>Терияки</li>
-                            <li>Вегетарианская</li>
-                        </ul>
-                        <div class="menu__block_btn">
-                            <div class="menu__btn"><span>Мини-189 ₽</span></div>
-                            <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
-                            <div class="menu__btn"><span>Дабл-299 ₽</span></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 p-2">
-                <div class="menu__block_menu">
-                    <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
-                        <p class="menu__block_menu__title">
-                            Дополнительно
-                        </p>
-                        <ul class="menu__list">
-                            <li>Лук (жареный)</li>
-                            <li>Морковь по-корейски</li>
-                            <li>Халапеньо</li>
-                            <li>Картофель (фри/пюре)</li>
-                            <li>Зелень</li>
-                            <li>Фасоль (марин.)</li>
-                            <li>Грибы (марин.)</li>
-                            <li>Маслины</li>
-                            <li>Лук красный (марин.)</li>
-                            <li>Корнишоны</li>
-                        </ul>
-                        <div class="menu__block_btn">
-                            <div class="menu__btn"><span>Все по 50 ₽</span></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 p-2">
-                <img src="img/shaurma2.png" alt="шаурма" class="d-none d-lg-block">
-            </div>
         </div>
     </div>
 </section>
@@ -249,7 +257,7 @@
                                 <p class="action__p">Беспройгрышная лотерея при заказе свыше 500 ₽</p>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 d-none d-lg-block">
                             <img src="img/smile3.png" alt="smile" class="img-fluid">
                         </div>
                     </div>
@@ -261,7 +269,7 @@
 <section class="mt-5">
     <div class="container action">
         <div class="row align-items-center">
-            <div class="col-md-6 p-0">
+            <div class="col-lg-6 p-lg-0">
                 <h2 class="menu__h2 mb-4">О нас</h2>
                 <p class="about__p mb-4">В нашем кафе сначала узнают вкус каждого клиента, а потом предлагают шаурму,
                     исходя из ваших предпочтений.</p>
@@ -456,8 +464,6 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
-                    <!-- If we need scrollbar -->
-
                 </div>
             </div>
 
@@ -570,16 +576,33 @@
                 <div class="swiper-paginate mt-3"></div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="button_prev"></div>
+                <div class="button_next"></div>
             </div>
         </div>
     </div>
     </div>
 </section>
-<footer>
-    <div class="container">
-        <div class="row">
+<footer class="pb-5">
+    <div class="container footer">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-3 text-center text-md-left">
+                <p class="">КОНТАКТЫ</p>
+                <p class="mb-2">+7 977 744-14-45</p>
+                <p class="mb-2 mt-5 mt-md-0">Соц. сети</p>
+                <p class=""><img src="img/wa-whatsapp.png" alt=""> <img src="img/telegram%201.png" alt=""> <img
+                        src="img/viber-square-color%201.png" alt=""></p>
+            </div>
+            <div class="col-lg-3 text-center mt-5 mt-md-0">
+                <p>Будем рады вашим отзывам</p>
+                <p>neobichayi@yandex.ru</p>
+            </div>
+            <div class="col-lg-3 mt-5 mt-md-0 text-center text-md-left">
+                <p class="mb-3 mb-md-0">ПРИНИМАЕМ К ОПЛАТЕ</p>
+                <p><img src="img/Frame%206.png" alt=""></p>
+                <p><span>© 2022 ЕДа для тебя </span></p>
+                <p><span> Все права защищены</span></p>
+            </div>
 
         </div>
     </div>
@@ -589,7 +612,6 @@
 <script src="map.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
-
         // Optional parameters
         slidesPerView: 4,
         spaceBetween: 20,
@@ -642,8 +664,8 @@
 
         // Navigation arrows
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.button_next',
+            prevEl: '.button_prev',
         },
         breakpoints: {
             // when window width is >= 320px
@@ -668,6 +690,32 @@
         }
 
     });
+
+    // Tabs
+    class TabList {
+        constructor(buttonsContainer, tabs) {
+            this.buttonsContainer = buttonsContainer;
+            this.tabs = tabs;
+
+            this.buttonsContainer.addEventListener('click', event => {
+                const index = event.target.closest('.button').dataset.value;
+
+                this.openTab(index);
+            });
+        }
+
+        openTab(index) {
+            this.tabs.querySelector('.active').classList.remove('active');
+            this.tabs.querySelector(`.tab--${index}`).classList.add('active');
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+        const buttonsContainer = document.querySelector('.buttons');
+        const tabs             = document.querySelector('.tabs');
+
+        const tabList = new TabList(buttonsContainer, tabs);
+    })
 </script>
 </body>
 </html>
