@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-grid.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/remodal.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -15,17 +17,24 @@
 <section id="header">
     <div class="container">
         <div class="row">
+            <div class="col-12">
             <header class="header">
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li><a href="">Меню</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Отзывы</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#review">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                         <a href="tel:+79777441445" class="header__phone">+7 977 744-14-45</a>
                     </ul>
+                    <div class="hamburger hamburger--spin-r navbar-toggler border-0 collapsed" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger-box navbar-toggler border-0 collapsed">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
                 </nav>
             </header>
+            </div>
         </div>
     </div>
 </section>
@@ -95,7 +104,7 @@
     </div>
 </section>
 <section class="mt-5">
-    <div class="container menu">
+    <div class="container menu" id="menu">
         <div class="row ">
             <div class="col-12">
                 <h2 class="menu__h2">Наше меню</h2>
@@ -131,6 +140,7 @@
                                     <li>С красным</li>
                                     <li>С фирменным</li>
                                 </ul>
+                                <span class="menu__more summary__shipping-tax shipping-tax shipping-tax_mb_disabled" data-id="1" data-remodal-target="modal" data-target="#modalForm"><p>Подробнее</p></span>
                                 <div class="menu__block_btn">
                                     <div class="menu__btn"><span>Мини-189 ₽</span></div>
                                     <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
@@ -150,6 +160,7 @@
                                     <li>Карри</li>
                                     <li>Сборная</li>
                                 </ul>
+                                <span class="menu__more summary__shipping-tax shipping-tax shipping-tax_mb_disabled" data-id="2" data-remodal-target="modal" data-target="#modalForm"><p>Подробнее</p></span>
                                 <div class="menu__block_btn">
                                     <div class="menu__btn"><span>Мини-189 ₽</span></div>
                                     <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
@@ -169,6 +180,7 @@
                                 <ul class="menu__list">
                                     <li>Фирменный соус</li>
                                 </ul>
+                                <span class="menu__more summary__shipping-tax shipping-tax shipping-tax_mb_disabled" data-id="3" data-remodal-target="modal" data-target="#modalForm"><p>Подробнее</p></span>
                                 <div class="menu__block_btn">
                                     <div class="menu__btn"><span>Мини-189 ₽</span></div>
                                     <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
@@ -193,7 +205,8 @@
                                     <li>Наршараб</li>
                                     <li>Терияки</li>
                                     <li>Вегетарианская</li>
-                                </ul>
+                                </ul><span class="menu__more summary__shipping-tax shipping-tax shipping-tax_mb_disabled" data-id="4" data-remodal-target="modal" data-target="#modalForm"><p>Подробнее</p></span>
+
                                 <div class="menu__block_btn">
                                     <div class="menu__btn"><span>Мини-189 ₽</span></div>
                                     <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
@@ -235,25 +248,57 @@
             </div>
             <div class="tab tab--2">
                 <div class="row mt-3 d-block d-md-flex">
+
                     <div class="col-md-4 col-lg-3 p-2">
-                        <div class="menu__block_menu">
+                        <div class="menu__block_menu menu__block_menu_item">
                             <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
                                 <p class="menu__block_menu__title">
-                                    Фирменная шаурма
+                                    Чай
                                 </p>
                                 <ul class="menu__list">
-                                    <li>Фирменная</li>
-                                    <li>Кавказская</li>
-                                    <li>Президентская</li>
-                                    <li>Острая с халапеньо</li>
-                                    <li>Наршараб</li>
-                                    <li>Терияки</li>
-                                    <li>Вегетарианская</li>
+                                    <li>Черный</li>
+                                    <li>Зеленый</li>
                                 </ul>
                                 <div class="menu__block_btn">
-                                    <div class="menu__btn"><span>Мини-189 ₽</span></div>
-                                    <div class="menu__btn"><span>Стандарт-249 ₽</span></div>
-                                    <div class="menu__btn"><span>Дабл-299 ₽</span></div>
+                                    <div class="menu__btn"><span>от 70 ₽</span></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu menu__block_menu_item">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <p class="menu__block_menu__title">
+                                    Вода
+                                </p>
+                                <ul class="menu__list">
+                                    <li>С газом</li>
+                                    <li>Без газа</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>от 90 ₽</span></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 p-2">
+                        <div class="menu__block_menu menu__block_menu_item">
+                            <div class="menu__block_menu2 d-flex flex-column align-items-center justify-content-between">
+                                <p class="menu__block_menu__title">
+                                    Энергетики
+                                </p>
+                                <ul class="menu__list">
+                                    <li>В ассортименте</li>
+                                </ul>
+                                <div class="menu__block_btn">
+                                    <div class="menu__btn"><span>от 90 ₽</span></div>
+
                                 </div>
                             </div>
 
@@ -261,6 +306,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -289,7 +335,7 @@
     </div>
 </section>
 <section class="mt-5">
-    <div class="container action">
+    <div class="container action" id="about">
         <div class="row align-items-center">
             <div class="col-lg-6 p-lg-0">
                 <h2 class="menu__h2 mb-4">О нас</h2>
@@ -299,6 +345,8 @@
                     который вам не по вкусу.</p>
                 <p class="about__p">Хозяйка Светлана часто обслуживает гостей лично, чтобы учесть пожелания и
                     потребности каждого.</p>
+                <p class="text-gradient">Приежай в гости!</p>
+                <p class="text-gradient mb-4 mb-md-0">Заходи-перекуси!</p>
             </div>
             <div class="col-lg-6 p-0">
                 <img src="img/about.jpg" alt="photo" class="img-fluid action__img-right">
@@ -307,7 +355,7 @@
     </div>
 </section>
 <section class="mt-5">
-    <div class="container review">
+    <div class="container review" id="review">
         <div class="row">
             <div class="col-12">
                 <h2 class="menu__h2 mb-4">Отзывы</h2>
@@ -521,7 +569,7 @@
     </div>
 </section>
 <section>
-    <div class="container contacts">
+    <div class="container contacts" id="contacts">
         <div class="row">
             <div class="col-12">
                 <h2 class="menu__h2 mb-4 mt-5">Контакты</h2>
@@ -629,10 +677,43 @@
         </div>
     </div>
 </footer>
+<div class="remodal rounded remodal-is-initialized remodal-is-opened" data-remodal-id="modal" tabindex="-1">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="remodal_content"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&#038;ver=1.0.0' id='yaMap-js'></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/remodal.js"></script>
 <script src="map.js"></script>
 <script>
+// Modal
+var modal_text = {1: '<p class="mb-2"><b>С чесночным:</b> Белый лаваш, курица, капуста белокочанная, помидор, огурец, соус чесночный</p></br> <p class="mb-2"><b>С красным:</b> Белый лаваш, курица, капуста белокочанная, помидор, огурец, соус красный</p></br> <p class="mb-2"><b>С фирменным:</b> Белый лаваш, курица, капуста белокочанная, помидор, огурец, соус фирменный</p>',
+    2: '<p class="mb-2"><b>Соус:</b> на выбор. Лаваш: на выбор, курица, капуста белокочанная, помидор, огурец, + 2 допа на выбор</p>',
+    3: '<p class="mb-2"><b>Фирменный рецепт держится в строжайшем секрете</b>',
+    4: '<p class="mb-2"><b>Терияки:</b> Лаваш, курица, капуста пекинская, помидор, огурец, кунжут, соус терияки</p></br> <p class="mb-2"><b>Сырная:</b> Сырный лаваш, курица, капуста пекинская, помидор, сыр Креметте, сыр Карат, соус сырный</p></br> <p class="mb-2"><b>Президентская:</b> Лаваш, курица, пюре капуста пекинская, корнишоны, лук репчатый, соус карри</p> </br> <p class="mb-2"><b>Наршараб:</b> Лаваш, курица, капуста пекинская, огурец, лук красный, помидор, соус наршараб</p> </br> <p class="mb-2"><b>Кавказская:</b> Белый лаваш, курица, капуста белокочанная, огурец, лук красный, петрушка, помидор, соус красный</p>'
+
+};
+$('.menu__more').each(function (){
+    $(this).click(function (){
+        var num = ($(this).data('id'));
+        $('.remodal_content').html(modal_text[num]);
+    })
+})
+// Modal end
+// Hamburger
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+        hamburgers.forEach(function(hamburger) {
+            hamburger.addEventListener("click", function() {
+                document.querySelector('.header__list').classList.toggle("animate");
+                this.classList.toggle("is-active");
+            }, false);
+        });
+    }
+
+
+// carousel menu
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         slidesPerView: 4,
@@ -672,7 +753,7 @@
 
     });
 
-
+// carousel review
     const swiper2 = new Swiper('.photo__swiper', {
         loop: true,
         // Optional parameters
@@ -714,7 +795,6 @@
     });
 
     // Tabs
-
     const btn = document.querySelector('.button');
     btn.addEventListener('click', event => {
 
@@ -750,6 +830,25 @@
 
         const tabList = new TabList(buttonsContainer, tabs);
     })
+
+
+// Csroll without jQuery
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href').substr(1)
+        document.querySelector('.header__list').classList.remove("animate");
+        document.querySelector('.hamburger').classList.remove("is-active");
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
+
 </script>
 </body>
 </html>
